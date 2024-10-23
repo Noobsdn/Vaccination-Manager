@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Manager | Stay Safe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body id="body" class="bg-white h-screen w-screen text-white font-serif font-family: 'Agdasima' flex-col overflow-x-hidden" >
+    <div id="login" class="hidden justify-center items-center relative top-3/4 z-10">
+        <div class="bg-slate-800 opacity-90 flex relative h-96 w-4/12 rounded-md justify-center items-center pt-4">
+            <form action="/dis/index.html" method="post" class="flex flex-col w-9/12">
+                <div class="flex justify-center">
+                    <h1 class="uppercase text-center font-bold text-4xl relative bottom-5 font-serif text-white">Login Page</h1>
+                    <i id="close" class="bi bi-x-lg absolute top-6 right-6 text-xl cursor-pointer hover:text-red-500"></i>
+                </div>
+                <input type="text" required class="mt-1 p-2 bg-slate-950 bg-opacity-65 outline-none border-none text-white text-xl rounded-sm" placeholder="User name">
+                <input type="email" required name="" id="" class="mt-1 p-2 bg-slate-950 bg-opacity-65 outline-none border-none text-white text-xl rounded-sm" placeholder="Email">
+                <input type="password" required name="" id="" class="mt-1 p-2 rounded-sm bg-slate-950 bg-opacity-65 outline-none border-none text-white text-xl" placeholder="Password">
+                <div class="flex justify-between mt-2">
+                    <a href="/dis/index.html" class="text-gray-200 hover:text-opacity-70 font-semibold underline">Forgot password</a> 
+                    <a href="/dis/signup.html#mainPage" class="h-8 w-16 p-2 rounded-sm bg-slate-950 bg-opacity-65 hover:bg-opacity-55 hover:text-opacity-70 text-white flex items-center">Signup</a>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" id="submit" class="mt-6 h-9 w-5/12 bg-slate-950 text-white font-medium rounded-sm flex items-center justify-center bg-opacity-65 hover:bg-opacity-55 hover:text-opacity-70">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="mainPage" class="">
+        <nav class="bg-gray-950 bg-opacity-55 top-0 h-20 w-screen flex fixed z-20">
+            <ul class="flex justify-around h-20 items-center w-screen uppercase">
+                <a href=""><li class="capitalize font-bold text-xl text-green-500">M-VACCINE</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Users</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Library</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">History</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Reminder</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Health Tips</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Help</li></a>
+                <a href=""><li class="cursor-pointer hover:text-slate-500">Settings</li></a>
+                <a href="#mainPage"><li id="login_signup" class="h-9 w-32 flex justify-center items-center p-2 bg-slate-900 cursor-pointer hover:bg-yellow-400 hover:text-slate-950 rounded-sm text-yellow-400">Login/Signup</li></a>
+            </ul>
+        </nav>
+        <div id="img" class="flex justify-center relative">
+            <img src="pexels-padrinan-3936360.jpg" alt="" class="w-auto">
+        </div>
+        <div class="relative top-0">
+            <div class="w-screen h-auto flex items-center flex-col justify-center">
+                <h1 class="mt-14 text-gray-900 font-bold text-5xl">Take Vaccines | Stay Healthy | Save Life</h1>
+                <p class="w-10/12 text-center mt-6 text-2xl font-serif font-medium text-slate-900">Vaccination plays a crucial role in protecting individuals and communities from infectious diseases. By introducing a harmless version of a virus or bacteria into the body, vaccines stimulate the immune system to recognize and fight the disease without causing illness. This helps prevent serious infections like measles, polio, and influenza.</p>
+            </div>
+            <hr>
+            <h1 class="uppercase text-slate-900 text-center mt-20 font-bold text-4xl">Take Our Services</h1>
+            <div class="flex justify-around mt-8 text-slate-900">
+                <div class="flex flex-col ">
+                    <img src="img2.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img5.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img3.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img4.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img5.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img2.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img3.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+                <div class="flex flex-col ">
+                    <img src="img5.jpeg" alt="" class="rounded-md border-4 mb-1 h-36 border-slate-900">
+                    <!-- <p class="uppercase h-20 w-full flex justify-center items-center ">Take this vaccine</p> -->
+                    <button class="uppercase bg-yellow-500 hover:bg-yellow-400  flex items-center justify-center h-10 rounded-md border-2 border-yellow-700">Check Price</button>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-20">
+            <div class="bg-slate-950 h-36 w-screen flex flex-col justify-center items-center">
+                <h1 class="text-2xl">STAY with US | <span class="text-4xl relative top-1">&#169;</span> All Rights Reserved 2024</h1>
+            </div>
+        </footer>
+        <div class="h-1 bg-white"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
